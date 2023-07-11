@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
+
 import useMediaQuery from "./hooks/useMediaQuery";
+
 import Navbar from "./components/Navbar";
+import DotGroup from "./components/DotGroup";
 
 export const App = () => {
     const [selectedPage, setSelectedPage] = useState("home");
@@ -15,7 +18,7 @@ export const App = () => {
         window.addEventListener("scroll", handleScroll);
 
         return () => window.removeEventListener("scroll", handleScroll);
-    });
+    }, []);
     return (
         <div className="app bg-deep-blue">
             <Navbar
@@ -23,6 +26,14 @@ export const App = () => {
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
             />
+            <div className="w-5/6 mx-auto md:h-full">
+                {isAboveMediumScreens && (
+                    <DotGroup
+                        selectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
+                    />
+                )}
+            </div>
         </div>
     );
 };

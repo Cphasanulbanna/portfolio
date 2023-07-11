@@ -20,7 +20,7 @@ const Contact = () => {
     return (
         <section
             id="contact"
-            className="py-48"
+            className="py-20 md:py-48"
         >
             {/* HEADINGS */}
             <motion.div

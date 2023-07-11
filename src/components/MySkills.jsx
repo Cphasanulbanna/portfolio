@@ -10,10 +10,10 @@ const MySkills = () => {
     return (
         <section
             id="skills"
-            className="pt-10 pb-24"
+            className="pt-5 md:pt-10 pb-24"
         >
             {/* HEADER & IMAGE SECTION */}
-            <div className="md:flex md:justify-between md:gap-16 mt-32">
+            <div className="md:flex md:justify-between md:gap-16 mt-16 md:mt-32">
                 <motion.div
                     className="md:w-1/3"
                     initial="hidden"

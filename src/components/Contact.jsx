@@ -24,6 +24,7 @@ const Contact = () => {
         >
             {/* HEADINGS */}
             <motion.div
+                className="flex justify-end w-full"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -35,7 +36,7 @@ const Contact = () => {
                         <span className="text-yellow">CONTACT ME </span>TO GET STARTED
                     </p>
                     <div className="flex md:justify-end my-5">
-                        <LineGradient width="w-2/4 mx-auto" />
+                        <LineGradient width="w-1/2" />
                     </div>
                 </div>
             </motion.div>

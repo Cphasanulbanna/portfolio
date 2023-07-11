@@ -7,7 +7,7 @@ const SocialMediaIcons = () => {
                 href="http://www.linkedin.com"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:opacity-50 transition duration-500"
+                className="hover:opacity-50 transition duration-500 w-[32px]"
             >
                 <img
                     src="../assets/linkedin.png"
@@ -18,7 +18,7 @@ const SocialMediaIcons = () => {
                 href="http://www.twitter.com"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:opacity-50 transition duration-500"
+                className="hover:opacity-50 transition duration-500 w-[32px]"
             >
                 <img
                     src="../assets/twitter.png"
@@ -29,7 +29,7 @@ const SocialMediaIcons = () => {
                 href="http://www.facebook.com"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:opacity-50 transition duration-500"
+                className="hover:opacity-50 transition duration-500 w-[32px]"
             >
                 <img
                     src="../assets/facebook.png"
@@ -40,11 +40,22 @@ const SocialMediaIcons = () => {
                 href="http://www.instagram.com"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:opacity-50 transition duration-500"
+                className="hover:opacity-50 transition duration-500 w-[32px]"
             >
                 <img
                     src="../assets/instagram.png"
                     alt="instagram-link"
+                />
+            </a>
+            <a
+                href="http://www.github.com"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:opacity-50 transition duration-500 w-[32px]"
+            >
+                <img
+                    src="../assets/github.png"
+                    alt="github-link"
                 />
             </a>
         </div>

@@ -4,6 +4,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 
 import Navbar from "./components/Navbar";
 import DotGroup from "./components/DotGroup";
+import Landing from "./components/Landing";
 
 export const App = () => {
     const [selectedPage, setSelectedPage] = useState("home");
@@ -33,6 +34,7 @@ export const App = () => {
                         setSelectedPage={setSelectedPage}
                     />
                 )}
+                <Landing setSelectedPage={setSelectedPage} />
             </div>
         </div>
     );
